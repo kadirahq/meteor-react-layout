@@ -106,4 +106,4 @@ FlowRouter.route('/post/:_id', {
 
 #### SSR Support
 
-SSR Support is still experimental and you need to `meteorhacks:flow-router-ssr` for that. Have a look at [this sample app](https://github.com/arunoda/hello-react-meteor).
+SSR Support is still experimental and you need to use `meteorhacks:flow-router-ssr` for that. Have a look at [this sample app](https://github.com/arunoda/hello-react-meteor).
