@@ -7,7 +7,7 @@ Package.describe({
 
 Package.onUse(function(api) {
   configure(api);
-  api.export('FlowRouter');
+  api.export('ReactLayout');
 });
 
 Package.onTest(function(api) {
