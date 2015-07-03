@@ -6,7 +6,9 @@ With React Layout you can easily render react components both alike in client an
 
 ### Adding it to your project
 
-`meteor add kadira:react-layout`
+~~~
+meteor add kadira:react-layout
+~~~
 
 Then you use `ReactLayout.render()` to render your component. Rather than simply rendering a component, you can also use it as a layout manager like [Flow Layout](https://github.com/meteorhacks/flow-layout). 
 
