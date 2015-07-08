@@ -104,7 +104,9 @@ FlowRouter.route('/post/:_id', {
 
 ~~~
 
-**Note:** If you'd like to use `getChildContext()` (for integrating [Material-UI](https://github.com/callemall/material-ui), for example), you must render the child component *within* the layout. You can do this by passing a function that renders the component rather than the component itself. In your layout component you can then call the function directly to render the component. See #2 for a full discussion.
+#### Using React Context 
+
+If you'd like to use `getChildContext()` (for integrating [Material-UI](https://github.com/callemall/material-ui), for example), you must render the child component *within* the layout. You can do this by passing a function that renders the component rather than the component itself. In your layout component you can then call the function directly to render the component. See [#2](https://github.com/kadirahq/meteor-react-layout/issues/2) for a full discussion.
 
 ~~~jsx
 MainLayout = React.createClass({
@@ -125,7 +127,7 @@ MainLayout = React.createClass({
         This is our header
       </header>
       <main>
-        {this.props.content()}  /* note function call */
+        {this.props.content()}  /* note, this is a function call */
       </main>
       <footer>
         This is our footer
