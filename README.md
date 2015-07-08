@@ -104,6 +104,60 @@ FlowRouter.route('/post/:_id', {
 
 ~~~
 
+**Note:** If you'd like to use `getChildContext()` (for integrating [Material-UI](https://github.com/callemall/material-ui), for example), you must render the child component *within* the layout. You can do this by passing a function that renders the component rather than the component itself. In your layout component you can then call the function directly to render the component. See #2 for a full discussion.
+
+~~~jsx
+MainLayout = React.createClass({
+
+  childContextTypes: {
+    muiTheme: React.PropTypes.object
+  },
+
+  getChildContext: function() {
+    return {
+      muiTheme: ThemeManager.getCurrentTheme()
+    };
+  },
+
+  render() {
+    return <div>
+      <header>
+        This is our header
+      </header>
+      <main>
+        {this.props.content()}  /* note function call */
+      </main>
+      <footer>
+        This is our footer
+      </footer>
+    </div>
+  }
+});
+
+Home = React.createClass({
+  render () {
+    return (
+      <div>
+        <h1>This is the home page</h1>
+        /* Rendering of material-ui components will work here */
+      </div>
+    );
+  }
+});
+
+FlowRouter.route('/', {
+  name: 'home',
+  action: function(params) {
+    /* The key 'content' is now a function */
+    ReactLayout.render(MainLayout, {
+      content() {
+        return <HomePage />;
+      }
+    });
+  }
+});
+~~~
+
 #### SSR Support
 
 SSR Support is still experimental and you need to use `meteorhacks:flow-router-ssr` for that. Have a look at [this sample app](https://github.com/arunoda/hello-react-meteor).
