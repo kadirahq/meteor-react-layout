@@ -1,7 +1,7 @@
 Package.describe({
   name: 'kadira:react-layout',
   summary: 'Layout Manager for React with SSR Support',
-  version: '1.1.0',
+  version: '1.2.0',
   git: 'https://github.com/kadirahq/meteor-react-layout.git'
 });
 
@@ -23,6 +23,6 @@ Package.onTest(function(api) {
 function configure(api) {
   api.versionsFrom('1.0');
 
-  api.use('meteorhacks:flow-router-ssr@2.0.1', ['client', 'server'], {weak: true});
+  api.use('kadira:flow-router-ssr@3.0.0', ['client', 'server'], {weak: true});
   api.addFiles('lib/react_layout.js', ['client', 'server']);
 }
