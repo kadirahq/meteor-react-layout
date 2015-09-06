@@ -47,7 +47,7 @@ function(test, done) {
 });
 
 function initFlowRouter (ssrContext) {
-  Package['meteorhacks:flow-router-ssr'] = {
+  Package['kadira:flow-router-ssr'] = {
     FlowRouter: {
       ssrContext: {
         get: function() {
