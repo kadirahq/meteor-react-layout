@@ -11,9 +11,11 @@ function(test, done) {
   });
 
   ReactLayout.render(simpleComp);
-  var reactText = $('#react-root').text();
-  test.equal(reactText, text);
-  done();
+  setTimeout(function() {
+    var reactText = $('#react-root').text();
+    test.equal(reactText, text);
+    done();
+  }, 10);
 });
 
 Tinytest.addAsync(
@@ -29,7 +31,10 @@ function(test, done) {
   });
 
   ReactLayout.render(simpleComp, {content: text});
-  var reactText = $('#react-root').text();
-  test.equal(reactText, text);
-  done();
+  
+  setTimeout(function() {
+    var reactText = $('#react-root').text();
+    test.equal(reactText, text);
+    done();
+  }, 10);
 });
