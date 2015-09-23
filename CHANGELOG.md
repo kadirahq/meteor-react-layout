@@ -1,5 +1,9 @@
 # Change Log
 
+### v1.3.1
+* Depend on the react-runtime package weakly
+* So, we always get it if it's in the project 
+
 ### v1.3.0
 * Get rid of jQuery
 
