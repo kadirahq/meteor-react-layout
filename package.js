@@ -22,6 +22,6 @@ Package.onTest(function(api) {
 
 function configure(api) {
   api.use('react-runtime@0.13.3', ['client', 'server'], {weak: true});
-  api.use('kadira:flow-router-ssr@3.0.0', ['client', 'server'], {weak: true});
+  api.use('kadira:flow-router-ssr@3.3.0', ['client', 'server'], {weak: true});
   api.addFiles('lib/react_layout.js', ['client', 'server']);
 }
