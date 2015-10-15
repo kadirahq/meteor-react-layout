@@ -104,7 +104,7 @@ FlowRouter.route('/post/:_id', {
 
 ~~~
 
-### Add Custom Props to Root Element
+#### Add Custom Props to Root Element
 
 Sometimes, you need to set classes and other props to the root elements. Then this is how to do it. Simply call following function before render anything:
 
