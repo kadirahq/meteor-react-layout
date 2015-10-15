@@ -104,6 +104,18 @@ FlowRouter.route('/post/:_id', {
 
 ~~~
 
+### Add Custom Props to Root Element
+
+Sometimes, you need to set classes and other props to the root elements. Then this is how to do it. Simply call following function before render anything:
+
+~~~js
+ReactLayout.setRootProps({
+  className: "ui middle aligned center aligned grid"
+});
+~~~
+
+> If you are using SSR, you need to call `setRootProps` in the server side.
+
 #### Using React Context 
 
 If you'd like to use `getChildContext()` (for integrating [Material-UI](https://github.com/callemall/material-ui), for example), you must render the child component *within* the layout. You can do this by passing a function that renders the component rather than the component itself. In your layout component you can then call the function directly to render the component. See [#2](https://github.com/kadirahq/meteor-react-layout/issues/2) for a full discussion.

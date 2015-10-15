@@ -11,17 +11,19 @@ Package.onUse(function(api) {
 });
 
 Package.onTest(function(api) {
-  configure(api);
-  api.use('react');
+  api.use('random');
   api.use('tinytest');
+  api.use('jquery');
+  configure(api);
 
   api.addFiles('test/client.jsx', 'client');
   api.addFiles('test/server.jsx', 'server');
+  api.addFiles('test/both.jsx', ['server', 'client']);
 });
 
 
 function configure(api) {
-  api.use('react-runtime@0.13.3', ['client', 'server'], {weak: true});
+  api.use('react@0.1.1');
   api.use('kadira:flow-router-ssr@3.0.0', ['client', 'server'], {weak: true});
   api.addFiles('lib/react_layout.js', ['client', 'server']);
 }
