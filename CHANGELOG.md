@@ -1,5 +1,9 @@
 # Change Log
 
+### v1.4.0
+
+* Add `ReactLayout.setRootProps()` api to add custom props to the root element. Usually useful to add classes when using semantic-ui.
+
 ### v1.3.1
 * Depend on the react-runtime package weakly
 * So, we always get it if it's in the project 
