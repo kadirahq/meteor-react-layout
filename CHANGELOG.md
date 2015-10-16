@@ -1,5 +1,9 @@
 # Change Log
 
+### v1.4.1
+
+* Fix the issue of adding two root dom nodes. See [#22](https://github.com/kadirahq/meteor-react-layout/issues/22).
+
 ### v1.4.0
 
 * Add `ReactLayout.setRootProps()` api to add custom props to the root element. Usually useful to add classes when using semantic-ui.
