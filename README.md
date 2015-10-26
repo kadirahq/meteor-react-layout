@@ -148,7 +148,7 @@ MainLayout = React.createClass({
   }
 });
 
-Home = React.createClass({
+HomePage = React.createClass({
   render () {
     return (
       <div>
