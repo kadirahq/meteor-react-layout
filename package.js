@@ -1,7 +1,7 @@
 Package.describe({
   name: 'kadira:react-layout',
   summary: 'Layout Manager for React with SSR Support',
-  version: '1.4.1',
+  version: '1.5.0',
   git: 'https://github.com/kadirahq/meteor-react-layout.git'
 });
 

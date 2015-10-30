@@ -1,5 +1,9 @@
 # Change Log
 
+### v1.5.0
+* Add React 0.14.x support
+* We added some code, which can be removed after MDG merged [this PR](https://github.com/meteor/react-packages/pull/124).
+
 ### v1.4.1
 
 * Fix the issue of adding two root dom nodes. See [#22](https://github.com/kadirahq/meteor-react-layout/issues/22).
