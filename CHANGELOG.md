@@ -1,5 +1,8 @@
 # Change Log
 
+### v1.5.2
+* Remove the hot fix to add correct ReactDOMServer support. react@0.14.1_1 has the fix.
+
 ### v1.5.1
 * Add browerify@0.8.3 until react package released with it.
 
@@ -17,7 +20,7 @@
 
 ### v1.3.1
 * Depend on the react-runtime package weakly
-* So, we always get it if it's in the project 
+* So, we always get it if it's in the project
 
 ### v1.3.0
 * Get rid of jQuery
