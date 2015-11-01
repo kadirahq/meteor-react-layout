@@ -1,5 +1,8 @@
 # Change Log
 
+### v1.5.1
+* Add browerify@0.8.3 until react package released with it.
+
 ### v1.5.0
 * Add React 0.14.x support
 * We added some code, which can be removed after MDG merged [this PR](https://github.com/meteor/react-packages/pull/124).
