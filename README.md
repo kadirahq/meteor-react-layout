@@ -34,7 +34,7 @@ Now we can render this component with:
 ReactLayout.render(WelcomeComponent)
 ```
 
-Note that, here you can don't create an element, but simply use the component class.
+Note that, here you don't create an element, but simply use the component class.
 
 You can also pass props like this:
 
