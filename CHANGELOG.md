@@ -1,5 +1,8 @@
 # Change Log
 
+### v1.5.3
+* Updated dependency on React to 0.14.3
+
 ### v1.5.2
 * Remove the hot fix to add correct ReactDOMServer support. react@0.14.1_1 has the fix.
 
