@@ -101,6 +101,7 @@ FlowRouter.route('/post/:_id', {
       content: <PostPage _id={params._id} />
     });
   }
+});
 
 ~~~
 
