@@ -1,8 +1,5 @@
 # Change Log
 
-### v1.5.4
-* Updated dependency on React to 0.14.3_1
-
 ### v1.5.3
 * Updated dependency on React to 0.14.3
 
