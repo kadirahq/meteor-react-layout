@@ -1,4 +1,4 @@
-> #### Note
+> #### NOTE
 > With Meteor 1.3, use [react-mounter](https://github.com/kadirahq/react-mounter) instead of this. <br />
 > Read this article for more information: [Getting Started with Meteor 1.3 and React](https://voice.kadira.io/getting-started-with-meteor-1-3-and-react-15e071e41cd1).
 
